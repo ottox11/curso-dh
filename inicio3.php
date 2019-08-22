@@ -1,9 +1,19 @@
-<small class="text-muted">Nombre de su mascota</small>
+
+<?php
+var_dump($_FILES);
+
+ ?>
 
 
-<p><?=$errors['nombre'][0]?></p>
 
-<!-- <div class="row">
+
+
+<!-- <small class="text-muted">Nombre de su mascota</small>
+
+
+
+
+<div class="row">
   <div class="col-md-5 mb-3">
     <label for="prov">Provincia</label>
     <select class="custom-select d-block w-100" id="prov">
@@ -39,4 +49,9 @@
 
 if (empty($_POST['apellido'])) {
   $errors ['apellido'] = ['Debe ingresar un apellido'];
+}
+
+foreach ($errors as $error) {
+  foreach ($error as $value) {
+}
 }

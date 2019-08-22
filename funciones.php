@@ -1,7 +1,7 @@
 <?php
 
 function get_value($valor){
-  return $POST($valor) ?? '';
+  return $_POST($valor) ?? '';
 
 }
 

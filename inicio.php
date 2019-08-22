@@ -2,6 +2,8 @@
 
 <?php
 
+var_dump($_FILES);
+
 if ($_FILES){
   if($_FILES['cv']['error'] != 0){
   echo 'Hubo un error al cargar el CV <br>';

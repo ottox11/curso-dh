@@ -3,10 +3,21 @@
 $nombre='';
 $email='';
 
-if($_POST){
-  var_dump ($_POST['nombre']);
+if (isset($_POST)){
+if (!empty($_POST['nombre'])){
+  if (!empty($_POST['email'])){
+    echo 'Bienvenido' . ' ' . $_POST['nombre'] . ' ' . 'ha sido registrado con el email' . ' ' . $_POST['email'];
+  }
+}
+  if (empty($_POST['nombre'])){
+      if (!empty($_POST['email'])){
+    echo 'Bienvenido' . ' ' . $_POST['email'];
+}
 }
 
+  var_dump ($_POST );exit;
+
+}
 
  ?>
 
